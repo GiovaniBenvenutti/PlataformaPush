@@ -7,11 +7,11 @@ import { PainelComponent } from './painel/painel.component';
 
 const routes: Routes = [
 
-  { path : 'auth', component: AuthComponent, outlet: 'routerAuth' },
-  { path : 'painel', component: PainelComponent, outlet: 'routerPainel' }, 
+  { path : 'auth', component: AuthComponent, outlet: 'routerPrincipal' },
+  { path : 'painel', component: PainelComponent, outlet: 'routerPrincipal' }, 
   { path : 'notifier', component: NotifierComponent, outlet: 'routerPainel' },
   { path : 'dashboard', component: DashboardComponent, outlet: 'routerPainel' }, 
-  { path : '', redirectTo: 'auth', pathMatch: 'full', outlet: 'routerAuth' }
+  //{ path : '', redirectTo: 'auth', pathMatch: 'full', outlet: 'routerPrincipal' }
 
 ];
 
