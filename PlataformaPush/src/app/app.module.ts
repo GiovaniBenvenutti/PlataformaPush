@@ -9,6 +9,7 @@ import { CardComponent } from './shared/card/card.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { NotifierComponent } from './notifier/notifier.component';
 import { PainelComponent } from './painel/painel.component';
+import { PainelModule } from './painel/painel.module';
 
 @NgModule({
   declarations: [
@@ -16,13 +17,13 @@ import { PainelComponent } from './painel/painel.component';
     AuthComponent,
     CardComponent,
     DashboardComponent,
-    NotifierComponent,
-    PainelComponent
+    NotifierComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    PainelModule
   ],
   providers: [],
   bootstrap: [AppComponent]
