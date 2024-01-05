@@ -8,6 +8,7 @@ import { AuthComponent } from './auth/auth.component';
 import { CardComponent } from './shared/card/card.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { NotifierComponent } from './notifier/notifier.component';
+import { PainelComponent } from './painel/painel.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { NotifierComponent } from './notifier/notifier.component';
     AuthComponent,
     CardComponent,
     DashboardComponent,
-    NotifierComponent
+    NotifierComponent,
+    PainelComponent
   ],
   imports: [
     BrowserModule,
