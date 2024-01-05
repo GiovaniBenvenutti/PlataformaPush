@@ -10,7 +10,7 @@ export class AuthComponent {
   constructor(private router: Router) {}
 
   navegarParaPainel() {
-    this.router.navigate([{ outlets: { routerPainel: ['painel'] } }]);
+    this.router.navigate([{ outlets: { routerPrincipal: ['painel'] } }]);
   }
 
 }
