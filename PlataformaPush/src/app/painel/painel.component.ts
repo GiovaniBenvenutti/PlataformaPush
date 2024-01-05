@@ -1,5 +1,5 @@
-import { Component, OnInit } from '@angular/core';
-import { Router } from '@angular/router';
+import { Component, NgModule, OnInit } from '@angular/core';
+import { Router, RouterModule, Routes } from '@angular/router';
 
 @Component({
   selector: 'app-painel',
@@ -18,6 +18,6 @@ export class PainelComponent implements OnInit{
   }
 
   ngOnInit(){
-    this.navegarParaNotifier();
+    //this.navegarParaNotifier();
   }
 }
