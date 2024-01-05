@@ -6,12 +6,16 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AuthComponent } from './auth/auth.component';
 import { CardComponent } from './shared/card/card.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
+import { NotifierComponent } from './notifier/notifier.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     AuthComponent,
-    CardComponent
+    CardComponent,
+    DashboardComponent,
+    NotifierComponent
   ],
   imports: [
     BrowserModule,
