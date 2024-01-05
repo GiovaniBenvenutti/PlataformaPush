@@ -26,7 +26,15 @@ text-align: center; margin-bottom: 0px;">Plataforma Notifier</p>
   </div>
 
 
+  
+  <button [routerLink]="[{ outlets: { routerAuth: ['auth'] } }]">Navegar para Auth</button>
+  <button [routerLink]="[{ outlets: { routerPainel: ['painel'] } }]">mudar conteudo dopainel</button>
+  
+  <button routerLink="./painel/painel.component" routerLinkActive="ativo">INICIO</button>
+
+
+
   <div class="telaPainel" > 
-    <router-outlet></router-outlet>
+    <router-outlet name="routerPainel"></router-outlet>
   </div>
   

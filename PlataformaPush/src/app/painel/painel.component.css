@@ -8,12 +8,4 @@
     background-color:rgba(253, 251, 251, 1);
     overflow: auto;
 
-    /* Para Chrome, Safari e Opera */
-    ::-webkit-scrollbar {
-        display: none;
-    }
-
-    /* Para IE, Edge e Firefox */
-    -ms-overflow-style: none;  /* IE e Edge */
-    scrollbar-width: none;  /* Firefox */
 }
