@@ -7,16 +7,16 @@ import { Router, RouterModule, Routes } from '@angular/router';
   styleUrls: ['./painel.component.css']
 })
 export class PainelComponent implements OnInit{
-  constructor(private router: Router) {}
+  constructor(private painelRouter: Router) {}
 
   navegarParaNotifier() {
     console.log('chamou notifier');
-    this.router.navigate([{ outlets: { routerPainel: ['notifier'] } }]);
+    this.painelRouter.navigate(['notifier']);
   }
 
   navegarParaDashboard() {
     console.log('chamou dash');
-    this.router.navigate([{ outlets: { routerPainel: ['dashboard'] } }]);
+    this.painelRouter.navigate(['dashboard']);
   }
 
   ngOnInit(){

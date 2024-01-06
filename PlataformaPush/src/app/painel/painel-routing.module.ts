@@ -7,6 +7,7 @@ import { DashboardComponent } from '../dashboard/dashboard.component';
 const painelRoutes: Routes = [
   { path: 'notifier', component: NotifierComponent},
   { path: 'dashboard', component: DashboardComponent},
+  { path : '', redirectTo: 'notifier', pathMatch: 'full'}
 ];
 
 @NgModule({
