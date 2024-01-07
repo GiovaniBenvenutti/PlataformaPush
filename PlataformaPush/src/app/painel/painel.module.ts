@@ -1,4 +1,5 @@
-/*
+import { PainelComponent } from './painel.component';
+
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { PainelRoutingModule } from './painel-routing.module';
@@ -11,8 +12,7 @@ import { DashboardComponent } from '../dashboard/dashboard.component';
     PainelRoutingModule
   ],
   exports: [],
-  declarations: [NotifierComponent, DashboardComponent],
+  declarations: [PainelComponent, NotifierComponent, DashboardComponent],
   providers:[]
 })
 export class PainelModule { }
-*/

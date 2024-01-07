@@ -5,20 +5,20 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AuthComponent } from './auth/auth.component';
-import { PainelComponent } from './painel/painel.component';
-//import { PainelModule } from './painel/painel.module';
+//import { PainelComponent } from './painel/painel.component';
+import { PainelModule } from './painel/painel.module';
 
 @NgModule({
   declarations: [
     AppComponent,
     AuthComponent,
-    PainelComponent
+//    PainelComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-//    PainelModule
+    PainelModule
   ],
   providers: [],
   bootstrap: [AppComponent]
