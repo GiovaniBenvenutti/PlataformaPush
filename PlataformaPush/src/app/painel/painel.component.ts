@@ -1,5 +1,5 @@
-import { Component, NgModule, OnInit } from '@angular/core';
-import { Router, RouterModule, Routes } from '@angular/router';
+import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-painel',
@@ -11,22 +11,21 @@ export class PainelComponent implements OnInit{
 
   navegarParaNotifier() {
     console.log('chamou notifier');    
-    //this.painelRouter.navigate([{ outlets: { out2: ['painel/notifier'] } }]);
-    this.painelRouter.navigate([{ outlets: { out2: ['notifier'] } }]);
+    this.painelRouter.navigate(['painel/notifier']);
   }
 
   navegarParaDashboard() {
     console.log('chamou dash');
-    this.painelRouter.navigate([{ outlets: { out2: ['dashboard'] } }]);
+    this.painelRouter.navigate(['painel/dashboard']);
   }
 
   navegarParaAuth(){
     console.log('chamou auth');
-    this.painelRouter.navigate([{ outlets: { out1: ['auth'] } }]);
+    this.painelRouter.navigate(['auth']);
 
   }
 
   ngOnInit(){
-    //this.navegarParaNotifier();
+    this.navegarParaNotifier();
   }
 }
