@@ -1,18 +1,18 @@
 
 export class Notification {
     
-  idnotification!: number;
+  idnotification!: Date;
   cardtitulo!: string;
   detalhes!: any;
   link!: string;  
   
   constructor(
-    idnotification?: number,
+    idnotification?: Date,
     cardtitulo?: string,
     detalhes?: any,
     link?: string
   ) {
-    this.idnotification = idnotification || 0;
+    this.idnotification = idnotification || new Date;
     this.cardtitulo = cardtitulo || '';
     this.detalhes = detalhes || '';
     this.link = link || '';

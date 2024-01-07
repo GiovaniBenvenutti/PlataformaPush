@@ -16,7 +16,7 @@ export class NotifierComponent {
   
   
   enviar(){
-    this.notificação.idnotification = new Date().getTime();
+    this.notificação.idnotification = new Date();
     this.notificação.cardtitulo = 'titulo';
     this.notificação.detalhes = 'detalhes';
     this.notificação.link = 'novo link';
