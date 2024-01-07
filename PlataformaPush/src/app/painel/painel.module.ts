@@ -12,7 +12,7 @@ import { DashboardComponent } from '../dashboard/dashboard.component';
     PainelRoutingModule
   ],
   exports: [],
-  declarations: [PainelComponent, NotifierComponent, DashboardComponent],
+  declarations: [NotifierComponent, DashboardComponent],
   providers:[]
 })
 export class PainelModule { }

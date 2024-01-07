@@ -20,6 +20,6 @@ export class PainelComponent implements OnInit{
   }
 
   ngOnInit(){
-    this.navegarParaNotifier();
+    //this.navegarParaNotifier();
   }
 }
