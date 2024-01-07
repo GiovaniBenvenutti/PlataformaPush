@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Notification } from '../model/notification/notification.component';
 
 @Component({
   selector: 'app-notifier',
@@ -6,5 +7,27 @@ import { Component } from '@angular/core';
   styleUrls: ['./notifier.component.css']
 })
 export class NotifierComponent {
+
+  private notificação!: Notification;
+  
+  constructor() { 
+    this.notificação = new Notification();
+  }
+  
+  
+  enviar(){
+    this.notificação.idnotification = new Date().getTime();
+    this.notificação.cardtitulo = 'titulo';
+    this.notificação.detalhes = 'detalhes';
+    this.notificação.link = 'novo link';
+    
+    console.log(this.notificação);
+  }
+
+  ngOnInit(){
+    this.enviar();
+  }
+  
+  
 
 }
