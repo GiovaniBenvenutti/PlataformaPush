@@ -1,4 +1,4 @@
-
+/*
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { PainelRoutingModule } from './painel-routing.module';
@@ -15,3 +15,4 @@ import { DashboardComponent } from '../dashboard/dashboard.component';
   providers:[]
 })
 export class PainelModule { }
+*/

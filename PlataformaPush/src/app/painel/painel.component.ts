@@ -10,7 +10,8 @@ export class PainelComponent implements OnInit{
   constructor(private painelRouter: Router) {}
 
   navegarParaNotifier() {
-    console.log('chamou notifier');
+    console.log('chamou notifier');    
+    //this.painelRouter.navigate([{ outlets: { out2: ['painel/notifier'] } }]);
     this.painelRouter.navigate([{ outlets: { out2: ['notifier'] } }]);
   }
 

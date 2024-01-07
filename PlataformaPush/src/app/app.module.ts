@@ -6,7 +6,7 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AuthComponent } from './auth/auth.component';
 import { PainelComponent } from './painel/painel.component';
-import { PainelModule } from './painel/painel.module';
+//import { PainelModule } from './painel/painel.module';
 
 @NgModule({
   declarations: [
@@ -18,7 +18,7 @@ import { PainelModule } from './painel/painel.module';
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    PainelModule
+//    PainelModule
   ],
   providers: [],
   bootstrap: [AppComponent]
