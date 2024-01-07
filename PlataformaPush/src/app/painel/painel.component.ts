@@ -11,12 +11,18 @@ export class PainelComponent implements OnInit{
 
   navegarParaNotifier() {
     console.log('chamou notifier');
-    this.painelRouter.navigate(['notifier']);
+    this.painelRouter.navigate([{ outlets: { out2: ['notifier'] } }]);
   }
 
   navegarParaDashboard() {
     console.log('chamou dash');
-    this.painelRouter.navigate(['dashboard']);
+    this.painelRouter.navigate([{ outlets: { out2: ['dashboard'] } }]);
+  }
+
+  navegarParaAuth(){
+    console.log('chamou auth');
+    this.painelRouter.navigate([{ outlets: { out1: ['auth'] } }]);
+
   }
 
   ngOnInit(){

@@ -4,9 +4,9 @@ import { AuthComponent } from './auth/auth.component';
 import { PainelComponent } from './painel/painel.component';
 
 const routes: Routes = [
-  { path : '', redirectTo: 'auth', pathMatch: 'full'},
-  { path : 'auth', component: AuthComponent},
-  { path : 'painel', component: PainelComponent}
+  { path : '', redirectTo: 'auth', pathMatch: 'full', outlet: 'out1' },
+  { path : 'auth', component: AuthComponent, outlet: 'out1' },
+  { path : 'painel', component: PainelComponent, outlet: 'out1' },
 
 ];
 

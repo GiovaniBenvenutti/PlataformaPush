@@ -9,5 +9,13 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
     justify-content: center;
     align-items: center;
     margin: 20px;
-    
+}
+
+
+.botaoSair {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2px;
+    width: 20px;
 }
