@@ -7,11 +7,13 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AuthComponent } from './auth/auth.component';
 import { PainelComponent } from './painel/painel.component';
 import { PainelModule } from './painel/painel.module';
+import { NotificationComponent } from './model/notification/notification.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     AuthComponent,
+    NotificationComponent,
   //  PainelComponent
   ],
   imports: [
