@@ -6,6 +6,8 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AuthComponent } from './auth/auth.component';
 import { PainelModule } from './painel/painel.module';
+import { CardComponent } from './shared/card/card.component';
+import { TextComponent } from './shared/text/text.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +19,9 @@ import { PainelModule } from './painel/painel.module';
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    PainelModule
+    PainelModule,
+    CardComponent,
+    TextComponent,
   ],
   providers: [],
   bootstrap: [AppComponent]

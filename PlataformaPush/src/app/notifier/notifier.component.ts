@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { Notification } from '../model/notification/notification.component';
+import { Notification } from '../model/notification/notification';
 
 @Component({
   selector: 'app-notifier',
@@ -25,7 +25,7 @@ export class NotifierComponent {
   }
 
   ngOnInit(){
-    this.enviar();
+   // this.enviar();
   }
   
   
