@@ -1,4 +1,3 @@
-
 import {Component, NgModule} from '@angular/core';
 import {MatIconModule} from '@angular/material/icon';
 import {MatButtonModule} from '@angular/material/button';
@@ -15,5 +14,20 @@ import { CommonModule } from '@angular/common';
   imports: [MatFormFieldModule, MatInputModule, FormsModule, MatButtonModule, MatIconModule, CommonModule ]
 })
 export class TextComponent {
-  value = 'Clear me';
+  value = '';
+  focus: Boolean = false;
+
+  onFocus() {
+    if(this.value!=''){
+      this.focus = true;
+    }
+  }
+
+  onBlur() {
+    this.focus = false;
+  }
+
+  onClick() {
+    this.value = '';
+  }
 }
