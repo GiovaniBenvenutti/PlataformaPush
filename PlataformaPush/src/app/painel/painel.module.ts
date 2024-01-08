@@ -13,7 +13,7 @@ import { NotifierComponent } from '../notifier/notifier.component';
     CommonModule,
     PainelRoutingModule,
     CardComponent,
-    TextComponent,
+    TextComponent
   ]
 })
 export class PainelModule { }
