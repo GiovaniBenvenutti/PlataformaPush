@@ -1,10 +1,9 @@
-<mat-form-field class="example-form-field">
-  <mat-label>Clearable input</mat-label>
-  <input matInput type="text" [(ngModel)]="value" 
-    (focus)="onFocus()" (blur)="onBlur()">
 
-  <button matSuffix mat-icon-button aria-label="Clear" 
-    (click)="onClick()" *ngIf="focus">
+<mat-form-field class="example-form-field">
+  <mat-label> {{textLabel}} </mat-label>
+  <input matInput type="text" (keyup)="onKey($event)" [(ngModel)]="inputValue">
+  <button matSuffix mat-icon-button aria-label="Clear"    
+    *ngIf="inputValue" (click)="onClick()">
       <mat-icon>close</mat-icon>
   </button>
 </mat-form-field>

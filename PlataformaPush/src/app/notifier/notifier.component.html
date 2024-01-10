@@ -1,4 +1,40 @@
 
-<text></text>
+<div style="display: flex; justify-content: left; height: 100%;">
 
-<card></card>
+    <div>
+        <p>
+            insira aqui os valores que devem aparecer no card
+        </p>
+
+        <div>
+            <text [textLabel]="titulo" (textValue)="atualizarTextoTitulo($event)"></text>
+        </div>
+                
+        <div>
+            <text [textLabel]="detalhes" (textValue)="atualizarTextoTitulo($event)"></text>
+        </div>
+        
+        <div>
+            <text [textLabel]="urlLink" (textValue)="atualizarTextoTitulo($event)"></text>
+        </div>
+
+        <p>
+            o tamanho do card irá se auto ajustar ao conteudo
+        </p>
+
+    </div>
+    
+
+    <div style="width:100%; height: 100%; display: flex; justify-content: center; align-items: center;">
+    
+            <card style="align-self: center;"
+                [titulo]="textoTitulo"
+                [detalhes]="textoDetalhes"
+                [urlLink]="textoUrl"    
+            ></card>
+    
+    </div>
+    
+    
+
+</div>

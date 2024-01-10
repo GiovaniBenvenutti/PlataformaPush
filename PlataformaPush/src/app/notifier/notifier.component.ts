@@ -10,11 +10,38 @@ export class NotifierComponent {
 
   private notificação!: Notification;
   
+  titulo: string = "Titulo";
+  detalhes: string = "Detalhes";
+  urlLink: string =  "Url anuncio";
+
+  textoTitulo: string = "texto titulo";
+  textoDetalhes: string = "Detalhes";
+  textoUrl: string = "Url anuncio";
+
   constructor() { 
     this.notificação = new Notification();
   }
   
+  atualizarTextoTitulo(event: Event) {
+    const inputElement = event.target as HTMLInputElement;
+    this.textoTitulo = inputElement.value;
+    
+    console.log(this.textoTitulo);
+}
+
+
   
+  ngOnInit(){
+    // this.enviar();
+   }
+  
+   
+
+
+
+
+  
+  /*
   enviar(){
     this.notificação.idnotification = new Date();
     this.notificação.cardtitulo = 'titulo';
@@ -23,11 +50,8 @@ export class NotifierComponent {
     
     console.log(this.notificação);
   }
+  */
 
-  ngOnInit(){
-   // this.enviar();
-  }
-  
   
 
 }
