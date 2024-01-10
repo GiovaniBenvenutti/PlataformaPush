@@ -26,7 +26,6 @@ export class NotifierComponent {
     const inputElement = event.target as HTMLInputElement;
     this.textoTitulo = inputElement.value;
     
-    console.log(this.textoTitulo);
 }
 
 
