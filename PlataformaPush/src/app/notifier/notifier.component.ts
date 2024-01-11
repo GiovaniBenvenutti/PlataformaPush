@@ -11,12 +11,12 @@ export class NotifierComponent {
   private notificação!: Notification;
   
   titulo: string = "Titulo";
-  detalhes: string = "Detalhes";
+  detalhes: string = "Descrição";
   urlLink: string =  "Url anuncio";
 
   textoTitulo: string = "texto titulo";
-  textoDetalhes: string = "Detalhes";
-  textoUrl: string = "Url anuncio";
+  textoDetalhes: string = "Detalhes longos";
+  textoUrl: string = "Url anuncio aqui";
 
   constructor() { 
     this.notificação = new Notification();
@@ -24,9 +24,20 @@ export class NotifierComponent {
   
   atualizarTextoTitulo(event: Event) {
     const inputElement = event.target as HTMLInputElement;
-    this.textoTitulo = inputElement.value;
-    
-}
+    this.textoTitulo = inputElement.value; 
+    console.log(this.textoTitulo);   
+  }
+
+  atualizarTextoDetalhes(event: Event) {
+      const inputElement = event.target as HTMLInputElement;
+      this.textoDetalhes = inputElement.value;    
+  }
+
+  atualizarTextoUrl(event: Event) {
+      const inputElement = event.target as HTMLInputElement;
+      this.textoUrl = inputElement.value;    
+  }
+
 
 
   

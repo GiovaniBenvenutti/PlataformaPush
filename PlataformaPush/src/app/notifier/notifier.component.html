@@ -9,14 +9,15 @@
         <div>
             <text [textLabel]="titulo" (textValue)="atualizarTextoTitulo($event)"></text>
         </div>
+                        
+        <div>
+            <text [textLabel]="detalhes" (textValue)="atualizarTextoDetalhes($event)"></text>
+        </div>
                 
         <div>
-            <text [textLabel]="detalhes" (textValue)="atualizarTextoTitulo($event)"></text>
+            <text [textLabel]="urlLink" (textValue)="atualizarTextoUrl($event)"></text>
         </div>
         
-        <div>
-            <text [textLabel]="urlLink" (textValue)="atualizarTextoTitulo($event)"></text>
-        </div>
 
         <p>
             o tamanho do card irá se auto ajustar ao conteudo
@@ -27,10 +28,12 @@
 
     <div style="width:100%; height: 100%; display: flex; justify-content: center; align-items: center;">
     
+        <p>{{textoTitulo}}</p>
+
             <card style="align-self: center;"
-                [titulo]="textoTitulo"
-                [detalhes]="textoDetalhes"
-                [urlLink]="textoUrl"    
+                [tituloCard]="textoTitulo"
+                [detalhesCard]="textoDetalhes"
+                [urlLinkCard]="textoUrl"    
             ></card>
     
     </div>

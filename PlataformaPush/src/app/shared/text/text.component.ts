@@ -24,7 +24,7 @@ export class TextComponent {
     const inputElement = event.target as HTMLInputElement;
     this.inputValue = inputElement.value;
     this.textValue.next(this.inputValue);
-    console.log(this.inputValue)
+    //console.log(this.inputValue)
 }
 
   onClick() {
