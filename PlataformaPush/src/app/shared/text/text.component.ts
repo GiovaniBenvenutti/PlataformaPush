@@ -17,18 +17,23 @@ import { Subject } from 'rxjs';
 export class TextComponent {
 
   @Input() textLabel: string = "Seu input aqui";
-  textValue = new Subject<string>();
+//  textValue = new Subject<string>();
   inputValue: string = '';
 
-  onKey(event: Event) {
+
+  @Output() textValue = new EventEmitter<string>();
+
+onKey(event: Event) {
     const inputElement = event.target as HTMLInputElement;
     this.inputValue = inputElement.value;
-    this.textValue.next(this.inputValue);
-    //console.log(this.inputValue)
+    this.textValue.emit(this.inputValue);
 }
+
+  
 
   onClick() {
     this.inputValue = '';
+    this.textValue.emit(this.inputValue);
   }
 
 }

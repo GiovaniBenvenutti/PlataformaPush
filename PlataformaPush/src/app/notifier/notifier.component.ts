@@ -22,20 +22,29 @@ export class NotifierComponent {
     this.notificação = new Notification();
   }
   
-  atualizarTextoTitulo(event: Event) {
-    const inputElement = event.target as HTMLInputElement;
-    this.textoTitulo = inputElement.value; 
-    console.log(this.textoTitulo);   
+  atualizarTextoTitulo(valor: string) {
+    if(valor=='') {
+      this.textoTitulo = "Sem Titulo"
+    } else {      
+    this.textoTitulo = valor;
+    }
   }
 
-  atualizarTextoDetalhes(event: Event) {
-      const inputElement = event.target as HTMLInputElement;
-      this.textoDetalhes = inputElement.value;    
+
+  atualizarTextoDetalhes(valor: string) {
+    if(valor=='') {
+      this.textoDetalhes = "Sem Descrição"
+    } else {      
+      this.textoDetalhes = valor;
+    }   
   }
 
-  atualizarTextoUrl(event: Event) {
-      const inputElement = event.target as HTMLInputElement;
-      this.textoUrl = inputElement.value;    
+  atualizarTextoUrl(valor: string) {
+    if(valor=='') {
+      this.textoUrl = "Sem Url do anuncio"
+    } else {      
+      this.textoUrl = valor; 
+    }  
   }
 
 
