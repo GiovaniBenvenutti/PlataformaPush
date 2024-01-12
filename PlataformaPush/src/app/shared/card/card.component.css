@@ -1,7 +1,30 @@
 .example-card {
-    max-width: 400px;
-    margin-bottom: 8px;
-    width: 350px;
-    height: 200px;
-  }
+  max-width: 400px;
+  margin-bottom: 8px;
+  width: 350px;
+  height: 200px;
+}
   
+.titulo {
+  display: flex;
+  justify-content: flex-start;
+  width: 238px;
+  overflow: hidden;
+  text-overflow: inherit;
+  white-space: nowrap;
+}
+
+.mat-card-title, .mat-card-subtitle {
+  display: block;
+  overflow: hidden;
+  text-overflow: inherit;
+  white-space: nowrap;
+}
+
+.textoUrl{
+  display: block;
+  width: 320px;
+  height: 80px;
+  word-wrap: break-word;
+}
+

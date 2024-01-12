@@ -14,9 +14,9 @@ export class NotifierComponent {
   detalhes: string = "Descrição";
   urlLink: string =  "Url anuncio";
 
-  textoTitulo: string = "texto titulo";
-  textoDetalhes: string = "Detalhes longos";
-  textoUrl: string = "Url anuncio aqui";
+  textoTitulo: string = "Piante Pijamas";
+  textoDetalhes: string = "Supor Promo";
+  textoUrl: string = "Visite Piante.com.br para conhecer nosso produtos.";
 
   constructor() { 
     this.notificação = new Notification();
@@ -24,7 +24,7 @@ export class NotifierComponent {
   
   atualizarTextoTitulo(valor: string) {
     if(valor=='') {
-      this.textoTitulo = "Sem Titulo"
+      this.textoTitulo = "Piante Pijamas"
     } else {      
     this.textoTitulo = valor;
     }
@@ -33,7 +33,7 @@ export class NotifierComponent {
 
   atualizarTextoDetalhes(valor: string) {
     if(valor=='') {
-      this.textoDetalhes = "Sem Descrição"
+      this.textoDetalhes = "Conheça nosso site!"
     } else {      
       this.textoDetalhes = valor;
     }   
@@ -41,7 +41,7 @@ export class NotifierComponent {
 
   atualizarTextoUrl(valor: string) {
     if(valor=='') {
-      this.textoUrl = "Sem Url do anuncio"
+      this.textoUrl = "https://piante.com.br/ \n https://www.instagram.com/piante.pijamas/";
     } else {      
       this.textoUrl = valor; 
     }  

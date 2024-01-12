@@ -1,17 +1,25 @@
 
 <mat-card class="example-card">
     <mat-card-header>
-      <mat-card-title-group>
-        <mat-card-title>
-          {{tituloCard}}
-        </mat-card-title>
-        <mat-card-subtitle>
-         {{detalhesCard}}
-        </mat-card-subtitle>
-        <img mat-card-sm-image src="../../../assets/icons/logoMini_54.png" >
+      <mat-card-title-group >
+
+        <div class="titulo" style="display: block;">
+          <mat-card-title>
+            {{tituloCard}}
+          </mat-card-title>
+        
+          <mat-card-subtitle>
+          {{detalhesCard}}
+          </mat-card-subtitle>
+        </div>
+
+        <div >
+          <img mat-card-sm-image src="../../../assets/icons/logoMini_54.png" >
+        </div>
+
       </mat-card-title-group>
     </mat-card-header>
-    <mat-card-content>
+    <mat-card-content class="textoUrl">
       {{urlLinkCard}}
     </mat-card-content>
   </mat-card>
